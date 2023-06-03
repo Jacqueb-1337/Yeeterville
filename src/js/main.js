@@ -11,11 +11,11 @@
     const sr = window.sr = ScrollReveal()
 
     sr.reveal('.feature, .pricing-table-inner', {
-      duration: 1000,
+      duration: 1800,
       distance: '20px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
       origin: 'bottom',
-      interval: 100
+      interval: 500
     })
 
     doc.classList.add('anime-ready')
