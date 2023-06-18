@@ -1,0 +1,90 @@
+# LambDynamicLights configuration.
+# The dynamic lights mode
+mode = "fancy"
+
+# Light sources settings.
+[light_sources]
+	# Enables water-sensitive light sources check. This means that water-sensitive items will not light up when submerged in water.
+	water_sensitive_check = true
+	# Enable block entities light source.
+	block_entities = true
+	# Enable entities light source.
+	entities = true
+	# Enable first-person player light source.
+	self = true
+	# TNT lighting mode. May be off, simple or fancy.
+	tnt = "off"
+	# Creeper lighting mode. May be off, simple or fancy.
+	creeper = "simple"
+
+	[light_sources.settings]
+
+		[light_sources.settings.entities]
+
+			[light_sources.settings.entities.minecraft]
+				glow_item_frame = false
+				player = true
+				minecart = true
+				item_frame = true
+				area_effect_cloud = true
+				cat = true
+				villager = true
+				skeleton = true
+				pillager = true
+				creeper = true
+				cow = true
+				tropical_fish = true
+				spider = true
+				zombie = true
+				bat = true
+				pufferfish = true
+				witch = true
+				enderman = true
+				glow_squid = true
+				trader_llama = true
+				drowned = true
+				item = true
+				experience_orb = true
+				squid = true
+				salmon = true
+				hopper_minecart = true
+				skeleton_horse = true
+				dolphin = true
+				slime = true
+				cod = true
+				sheep = true
+				chicken = true
+				horse = true
+				boat = true
+				pig = true
+				iron_golem = true
+				zombie_villager = true
+				husk = true
+				zombified_piglin = true
+				strider = true
+				piglin = true
+				axolotl = true
+				rabbit = true
+				ocelot = true
+				leash_knot = true
+				wandering_trader = true
+				arrow = true
+				llama_spit = true
+				phantom = true
+				turtle = true
+				lightning_bolt = true
+				ender_pearl = true
+				endermite = true
+				experience_bottle = true
+				magma_cube = true
+				ghast = true
+				chest_minecart = true
+				firework_rocket = true
+				bee = true
+				silverfish = true
+				ender_dragon = true
+				dragon_fireball = true
+				parrot = true
+				spectral_arrow = true
+				potion = true
+
