@@ -1,12 +1,12 @@
 {
-    "minimumVersion": 1,
-    "packages": [
-        {
-            "name": "Yeeterville 2.0",
-            "title": "Yeeterville 2.0",
-            "version": "20100223",
-            "location": "yeeterville.json",
-            "priority": 1
-        }
-    ]
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "Yeeterville",
+      "name" : "Yeeterville 2.0",
+      "version" : "2023-06-18-13-27-25",
+      "location" : "yeeterville-2.0.json",
+      "priority" : 0
+    }
+  ]
 }
