@@ -10,9 +10,32 @@
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+
+<style>
+  
+  #overlay {
+  position: fixed;
+  left:0; top:0; bottom:0; right:0;
+  background: rgba(0,0,0, 0.3);
+  transition: 0.5s;
+  
+  opacity: 0;
+  visibility: hidden;
+}
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+<script>
+  
+  function toggleOverlay() {
+    document.getElementById('overlay').classList.toggle("active");
+  }
+</script>
 <body class="is-boxed has-animations">
+  <!-- <div id="overlay" style="align-items: center; backdrop-filter: blur(10px); width: 100%; height: 100%; position: fixed; background-color: rgba(0, 0, 0, 0.01); z-index: 1000000; text-align: center; "><div style="position: fixed; margin: auto;  text-align: center; width: 100vw; height: 100vh"><div id="choosedialog" style="background: #15181d; text-align: center; align-items: center; width: 250px; height: 250px; text-align: center; position: fixed; top: 30vh; left: 50%; margin-left: -125px; border-radius: 10px; border: solid 1px dimgray;"><span style="margin-top: 10px; display: block; color: white"><b>CHOOSE A VERSION</b><span style="display: block; height: 40px"></span><img src="/src/images/java.png" style="display: inline-block; width: 40%;"><span style="display: inline-block; width: 20px;"></span><img src="/src/images/bedrock.png" style="display: inline-block; width: 40%;"></span></div></div></div> -->
     <div class="body-wrap">
-      
         <header class="site-header">
             <div class="container">
                 <div class="site-header-inner">
@@ -26,7 +49,36 @@
                 </div>
             </div>
         </header>
+<style>
+.showelm {
+  height: 250px;
+  width: 280px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
 
+.hideelm {
+  height: 0px;
+  width: 280px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+</style>
         <main>
             <section class="hero">
                 <div class="container">
@@ -34,7 +86,7 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Welcome to Yeeterville</h1>
 	                        <p class="hero-paragraph">To begin your life as a peasant on Yeeterville, for Java users just download the latest launcher and play today, or for any other client just click "Get Server IP".</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="https://github.com/Jacqueb-1337/Yeeterville/releases/latest/download/bootstrap.jar">Latest Launcher .jar</a><a class="button" href="javascript:alert('This will be prettier later, still working on it. IP is jacqueb.pckt.me and leave the port as 19132')">Server IP</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="https://github.com/Jacqueb-1337/Yeeterville/releases/latest/download/bootstrap.jar">Latest Launcher .jar</a><a style="" class="button" onclick="toggleOverlay();">Server IP<br></a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
